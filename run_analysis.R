@@ -3,11 +3,11 @@ packages <- c("data.table", "reshape2")
 sapply(packages, require, character.only=TRUE, quietly=TRUE)
 path <- getwd()
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(url, file.path(path, "dataFiles.zip"))
-unzip(zipfile = "dataFiles.zip")
+download.file(url, file.path(path, "C:/Shloka/Coursera/getdata_projectfiles_UCI HAR Dataset.zip"))
+unzip(zipfile = "C:/Shloka/Coursera/getdata_projectfiles_UCI HAR Dataset.zip")
 
 # Load activity labels + features
-activityLabels <- fread(file.path(path, "UCI HAR Dataset/activity_labels.txt")
+activityLabels <- fread(file.path(path, "C:/Shloka/Coursera/UCI HAR Dataset/activity_labels.txt")
                         , col.names = c("classLabels", "activityName"))
 features <- fread(file.path(path, "UCI HAR Dataset/features.txt")
                   , col.names = c("index", "featureNames"))
